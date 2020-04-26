@@ -3,14 +3,26 @@
 </p>
 
 <p>
-  <strong>
-    Text:
-  </strong>
+  <strong>Text:</strong>
   <%= @article.text %>
 </p>
+
+<h2>Add comment</h2>
+<%= form_for([@article, @article.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %> <br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %> <br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
 <p><%=link_to "Back", articles_path%> |
   <%= link_to "Home", welcome_index_path %>
+</p>
 
-</p>
-<p>
-</p>
