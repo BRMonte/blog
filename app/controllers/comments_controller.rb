@@ -33,9 +33,10 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
+    @article = Article.find(params[:article_id])
+    @comment = @article.comments.find(params[:id])
     if @comment.destroy
-      redirect_to comments_path
+      redirect_to article_path(@article)
     end
   end
 
