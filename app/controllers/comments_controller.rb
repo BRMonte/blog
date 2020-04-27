@@ -14,9 +14,9 @@ class CommentsController < ApplicationController
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
-    # if @comment.save
-    #   redirect_to @comment
-    # end
+    if @comment.save
+      redirect_to article_path(@article)
+    end
   end
 
   def edit
