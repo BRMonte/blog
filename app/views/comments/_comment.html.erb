@@ -16,6 +16,7 @@
     </p>
     <p>
       <%= link_to "Delete Comment", [comment.article, comment],
+          class: 'btn btn-sm btn-danger',
           method: :Delete,
           data: {confirm: "Are your sure?"} %>
     </p>

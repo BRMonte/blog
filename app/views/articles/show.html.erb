@@ -1,23 +1,29 @@
-<p><strong>Title</strong>
-  <%= @article.title %>
-</p>
+<div class="row">
+  <div class="col"></div>
+  <div class="col-md-7">
 
-<p>
-  <%= @article.created_at %>
-</p>
+    <p><strong>Title</strong>
+      <%= @article.title %>
+    </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+    <p><%= @article.created_at %></p>
 
-<%= render 'comments/comment' %>
+    <p>
+      <strong>Text:</strong>
+      <%= @article.text %>
+    </p>
 
-<hr>
+    <%= render 'comments/comment' %>
 
-<%= render 'comments/form' %>
+    <hr>
 
-<p><%=link_to "Back", articles_path%> |
-  <%= link_to "Home", welcome_index_path %>
-</p>
+    <%= render 'comments/form' %>
+
+    <p>
+      <%=link_to "Back", articles_path, class: 'btn btn-md btn-primary'%>
+      <%= link_to "Home", welcome_index_path, class: 'btn btn-md btn-primary' %>
+    </p>
+  </div><!-- col-md-7-->
+  <div class="col"></div>
+</div><!-- row -->
 
