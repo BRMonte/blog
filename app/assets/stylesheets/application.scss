@@ -13,6 +13,8 @@
  *= require_self
  */
 @import "bootstrap";
+@import "welcome";
+@import "navigation";
 
 .container
 {padding-top: 15px}
@@ -25,5 +27,5 @@ thead
 .form-control
 {
   background-color: #efeeef;
-  border: 2px solid #FF9966;
+  border: 3px solid #FF9966;
 }
