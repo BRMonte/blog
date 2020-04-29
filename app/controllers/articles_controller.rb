@@ -1,5 +1,8 @@
 class ArticlesController < ApplicationController
 
+  http_basic_authenticate_with name: "BRM", password: "mimimi",
+  except: [:index, :show] #for all pages, except for show + index, its needed to sign in
+
   def index
     @articles = Article.all
   end
