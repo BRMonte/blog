@@ -19,9 +19,14 @@
 .container
 {padding-top: 15px}
 
+body {
+  background-color: #e1ef7e;
+}
+
 thead
 {
-  background-color: #dddddd;
+  background-color: #ffaa01;
+  color: white;
 }
 
 .form-control
@@ -32,4 +37,8 @@ thead
 
 .btn-light {
   border: 3px solid #FF9966;
+}
+
+.jumbotron {
+  background-color: white;
 }

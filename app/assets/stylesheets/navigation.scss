@@ -1,19 +1,20 @@
 .navbar {
-  background-color: #FF9966 !important;
+  background-color: #027a9f !important;
+  color: #ffaa01;
 }
 
 .nav-link {}
 
 .nav-item a {
   font-weight: bold;
-  color: #f3cace;
+  color: #027a9f;
 }
 
 .nav-item a:hover {
   font-weight: bold;
-  color: #ffffff;
+  color: red;
 }
 
 .navbar-toggler {
-  border: 2px solid #ffffff !important;
+  border: 2px solid #ffaa01 !important;
 }
